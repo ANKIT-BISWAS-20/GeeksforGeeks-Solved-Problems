@@ -312,6 +312,29 @@ void symmetry(int n) {
 #### Pattern 20 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P20.png)
 ```c++
+void symmetry(int n) {
+    int stars=1;
+    int space=2*n-2;
+    for (int i=0;i<2*n-1;i++){
+        for(int j=0;j<stars;j++){
+            cout<<"* ";
+        }
+        for(int j=0;j<space;j++){
+            cout<<"  ";
+        }
+        for(int j=0;j<stars;j++){
+            cout<<"* ";
+        }
+        if(i<n-1){
+            stars++;
+            space=space-2;
+        }else{
+            stars--;
+            space=space+2;
+        }
+        cout<<endl;
+    }
+}
 ```
 #### Pattern 21 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2023/01/Screenshot-2023-01-02-at-1.54.55-PM-1.jpg)
