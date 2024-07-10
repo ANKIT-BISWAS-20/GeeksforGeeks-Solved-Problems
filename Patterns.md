@@ -339,6 +339,17 @@ void symmetry(int n) {
 #### Pattern 21 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2023/01/Screenshot-2023-01-02-at-1.54.55-PM-1.jpg)
 ```c++
+void getStarPattern(int n) {
+    for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+            if(i==0||j==0||i==n-1||j==n-1)
+			    cout<<"*";
+            else
+                cout<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 22 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P22.png)
