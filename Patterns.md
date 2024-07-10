@@ -203,13 +203,15 @@ void nNumberTriangle(int n) {
 #### Pattern 14 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P14.png)
 ```c++
-char c='A';
+void nLetterTriangle(int n) {
+    char c='A';
     for(int i=0;i<n;i++){
 		for(int j=0;j<=i;j++){
             cout<<char(c+j)<<" ";
 		}
 		cout<<endl;
 	}
+}
 ```
 #### Pattern 15 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P15.png)
