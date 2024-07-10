@@ -282,6 +282,32 @@ void alphaTriangle(int n) {
 #### Pattern 19 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P19.png)
 ```c++
+void symmetry(int n) {
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n-i;j++){
+            cout<<"* ";
+        }
+        for(int j=0;j<2*i;j++){
+            cout<<"  ";
+        }
+        for(int j=0;j<n-i;j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<i+1;j++){
+            cout<<"* ";
+        }
+        for(int j=0;j<2*(n-i);j++){
+            cout<<"  ";
+        }
+        for(int j=0;j<i+1;j++){
+            cout<<"* ";
+        }
+        cout<<endl;
+    }
+}
 ```
 #### Pattern 20 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P20.png)
