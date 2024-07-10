@@ -157,6 +157,18 @@ void nStarTriangle(int n) {
 #### Pattern 11 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P11.png)
 ```c++
+void nBinaryTriangle(int n) {
+    for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+            if((i+j)%2==0){
+                cout<<1<<" ";
+            }else{
+                cout<<0<<" ";
+            }
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 12 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P12.png)
