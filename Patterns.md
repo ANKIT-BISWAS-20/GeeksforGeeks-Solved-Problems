@@ -243,6 +243,27 @@ void alphaRamp(int n) {
 #### Pattern 17 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P17.png)
 ```c++
+void alphaHill(int n) {
+    
+    for(int i=0;i<n;i++){
+        char c = 'A';
+        for(int j=0;j<n-1-i;j++){
+			cout<<" ";
+		}
+		for(int j=0;j<2*i+1;j++){
+            cout<<c<<" ";
+			if(j<i){
+                c=char(c+1);
+            }else{
+                c=char(c-1);
+            }
+		}
+        for(int j=0;j<n-1-i;j++){
+			cout<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 18 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P18.png)
