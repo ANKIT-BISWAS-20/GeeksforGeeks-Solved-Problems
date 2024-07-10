@@ -140,6 +140,19 @@ void nStarDiamond(int n) {
 #### Pattern 10 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P10.png)
 ```c++
+void nStarTriangle(int n) {
+    int stars = 1;
+    for (int i=0;i<2*n-1;i++){
+        for(int j=0;j<stars;j++){
+            cout<<"*";
+        }
+        if (i<n-1) 
+            stars++;
+        else 
+            stars--;
+        cout<<endl;
+    }
+}
 ```
 #### Pattern 11 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P11.png)
