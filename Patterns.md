@@ -229,6 +229,16 @@ void nLetterTriangle(int n) {
 #### Pattern 16 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P16.png)
 ```c++
+void alphaRamp(int n) {
+    char c='A';
+    for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+            cout<<c<<" ";
+		}
+		cout<<endl;
+        c=char(c+1);
+	}
+}
 ```
 #### Pattern 17 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P17.png)
