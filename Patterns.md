@@ -189,6 +189,16 @@ void numberCrown(int n) {
 #### Pattern 13 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P13.png)
 ```c++
+void nNumberTriangle(int n) {
+    int count=0;
+    for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+            count++;
+			cout<<count<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 14 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P14.png)
