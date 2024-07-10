@@ -173,6 +173,18 @@ void nBinaryTriangle(int n) {
 #### Pattern 12 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P12.png)
 ```c++
+void numberCrown(int n) {
+    for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<j+1<<" ";
+		}
+        
+        for(int j=i;j>=0;j--){
+			cout<<j+1<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 13 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P13.png)
