@@ -26,6 +26,14 @@ void nForest(int n) {
 #### Pattern 3 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P3.png)
 ```c++
+void nTriangle(int n) {
+	for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<j+1<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 4 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P4.png)
