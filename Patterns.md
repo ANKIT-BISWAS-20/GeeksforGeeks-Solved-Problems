@@ -2,6 +2,14 @@
 #### Pattern 1 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P1.png)
 ```c++
+void nForest(int n) {
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			cout<<"* ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 2 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P2.png)
