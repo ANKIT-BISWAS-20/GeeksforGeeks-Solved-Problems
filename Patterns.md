@@ -38,6 +38,14 @@ void nTriangle(int n) {
 #### Pattern 4 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P4.png)
 ```c++
+void triangle(int n) {
+	for(int i=0;i<n;i++){
+		for(int j=0;j<=i;j++){
+			cout<<i+1<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 5 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P5.png)
