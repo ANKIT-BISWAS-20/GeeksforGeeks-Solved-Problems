@@ -268,6 +268,16 @@ void alphaHill(int n) {
 #### Pattern 18 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P18.png)
 ```c++
+void alphaTriangle(int n) {
+    char c = char('A'+n-1);
+    for (int i=0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout<<char(c-j)<<" ";
+        }
+        cout<<endl;
+    }
+
+}
 ```
 #### Pattern 19 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P19.png)
