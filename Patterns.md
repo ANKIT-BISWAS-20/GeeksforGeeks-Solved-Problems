@@ -62,6 +62,14 @@ void seeding(int n) {
 #### Pattern 6 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P6.png)
 ```c++
+void nNumberTriangle(int n) {
+    for(int i=0;i<n;i++){
+		for(int j=0;j<n-i;j++){
+			cout<<j+1<<" ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 7 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P7.png)
