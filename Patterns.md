@@ -50,6 +50,14 @@ void triangle(int n) {
 #### Pattern 5 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P5.png)
 ```c++
+void seeding(int n) {
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n-i;j++){
+			cout<<"* ";
+		}
+		cout<<endl;
+	}
+}
 ```
 #### Pattern 6 :
 ![alt text](https://static.takeuforward.org/wp/uploads/2022/08/P6.png)
