@@ -36,22 +36,13 @@ struct Node {
 class Solution {
   public:
     Node *insertAtEnd(Node *head, int x) {
-        if(head==NULL){
-            Node* curr = new Node(x);
-            return curr;
-        }
-        Node* tail = head;
-        while(true){
-            if(tail->next==NULL){
-                break;
-            }
-            tail = tail->next;
-            if(tail->next==NULL){
-                break;
-            }
+        if (head == nullptr) return new Node(x);
+        Node* temp = head;
+        while(temp->next){
+            temp = temp->next;
         }
         Node* newNode = new Node(x);
-        tail->next = newNode;
+        temp->next = newNode;
         return head;
     }
 };
