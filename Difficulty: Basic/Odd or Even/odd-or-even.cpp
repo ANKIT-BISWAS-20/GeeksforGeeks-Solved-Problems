@@ -6,8 +6,8 @@ using namespace std;
 // } Driver Code Ends
 class Solution {
   public:
-    string oddEven(int n) {
-        return (n & 1) ? "odd" : "even";
+    bool isEven(int n) {
+        return (n & 1) > 0 ? false : true;
     }
 };
 
@@ -19,7 +19,10 @@ int main() {
         int N;
         cin >> N;
         Solution ob;
-        cout << ob.oddEven(N) << endl;
+        if (ob.isEven(N))
+            cout << "true" << endl;
+        else
+            cout << "false" << endl;
         cout << "~\n";
     }
     return 0;
